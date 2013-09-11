@@ -1,0 +1,508 @@
+/* File: theme.css
+ * Desc: General CSS for efl-rater.php
+ */
+
+@charset "UTF-8";
+
+body
+{
+    background: #62A5D0;
+    background-image: url('../img/bg-grad.jpg');
+    background-repeat: repeat-x;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #222222;
+}
+
+.center
+{
+    text-align: center;
+}
+
+a
+{
+    color: #222222;
+}
+
+a.plain 
+{
+    text-decoration: none;
+}
+
+a.plain:hover
+{
+    text-decoration: underline;
+}
+
+hr
+{
+    border: 0;
+    color: #0765A3;
+    background-color: #0765A3;
+    height: 2px;
+}
+
+#container
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+#header
+{
+    overflow: hidden;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#logo
+{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#search
+{
+    width: 55%;
+    margin-top: 28px;
+    float: right;
+}
+
+#search input#headerInput
+{
+    font-size: 16px;
+    width: 50%;
+    height: 21px;
+    background-color: #FAFAFA;
+    margin-top: 2px;
+    margin-right: 10px;
+    float:right;
+}
+
+#search input#headerSubmit
+{
+    margin-top: 1px;
+    border: none;
+    float: right;
+    width: 120px;
+    height: 30px;
+    background-color: #0765A3;
+    background-image: url('../img/search.png');
+    cursor: pointer;
+}
+
+#content
+{
+    overflow: hidden;
+    background: #FAFAFA;
+    border: 1px solid black;
+    width: 1000px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#navbar a
+{
+    text-decoration: none;
+}
+
+#navbar ul 
+{
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+li.nav
+{
+    text-align: center;
+    margin: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 1px solid #000;
+    display: inline;
+    font-size: 18px;
+}
+
+li.nav1
+{
+    text-align: center;
+    margin-left: 10px;
+    padding-right: 25px;
+    border-left: none;
+    display: inline;
+    font-size: 18px;
+}
+
+li#greeting
+{
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+    display: inline;
+
+}
+
+li#greeting a:hover
+{
+    text-decoration: underline;
+}
+
+div#rightBar
+{
+    position: relative;
+    float: right;
+    width: 190px;
+}
+
+ol#top
+{
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+div#midBar
+{
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+}
+
+#midBar h1, h2, h3, h4, h5, h6
+{
+    text-align: center;
+}
+
+#midBar .wideInput
+{
+    width: 75%;
+}
+
+div #leftBar
+{
+    position: relative;
+    float: left;
+    width: 190px;
+    margin-top: 25px;
+}
+
+div#leftBar h3
+{
+    text-align: left;
+}
+
+#leftBar p
+{
+    padding: 5px;
+}
+
+div#form
+{
+    float: left;
+    width:350px;
+    border-right: 2px solid #0765A3;
+}
+
+div#alternateLogin
+{
+    width: 230px;
+    float: right;
+}
+
+img.login
+{
+    padding: 10px;
+}
+
+span.small
+{
+    font-size: 10px;
+}
+
+#averageRating
+{
+    text-align: center
+}
+
+#news h4 
+{
+    text-align: left !important;
+}
+
+table.legend
+{
+    margin-top: 20px;
+}
+
+tr.legend
+{
+    text-align: center;
+}
+
+thead.reviewTableHead
+{
+    font-size: 18px;
+    border-bottom: 2px solid #0765A3;
+}
+
+th.reviewTableHead
+{
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+table.reviewTable
+{
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #0765A3;
+}
+
+td.reviewTable
+{
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #0765A3; 
+}
+
+ul.review
+{
+    text-align: left !important;
+}
+
+li.review h4
+{
+    text-align: left !important;
+}
+
+h4.reviewTitle
+{
+   text-align: left !important;
+}
+
+span.sortBy
+{
+    display: inline-block;
+    height: 10px;
+    margin-left: 5px;
+    background-image: url('../img/sort-arrows.png');
+    vertical-align: middle;
+    background-position: 0px 0px;
+}
+
+tr#searchTable:hover
+{
+    background-color: #DAE9F2 !important;
+    cursor: pointer;
+}
+
+img.icon
+{
+    vertical-align: middle;
+}
+
+table.ratings 
+{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.ratings
+{
+    vertical-align: middle;
+    padding: 5px;
+}
+
+#searchForm
+{
+    text-align: center;
+}
+
+#searchForm .select
+{
+    position: relative;
+    margin: 10px;
+}
+
+#searchForm .text
+{
+    position: relative;
+    margin: 10px;
+    width: 40%;
+}
+
+#searchForm #submit
+{
+    margin: auto;
+}
+
+.defaultForm
+{
+    position: relative;
+}
+
+.defaultForm input, label, select, textarea
+{
+    margin: 5px 0px 15px 0px;
+}
+
+.info
+{
+    border: 1px solid yellow;
+    background:#FFFBC6; 
+    padding: 10px;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.toggleHelp 
+{
+    color: #666;
+    font-size:11px;
+    vertical-align:super;
+    cursor: pointer;
+}
+
+.help 
+{
+    color: #666;
+    display: none;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.inputText
+{
+    color: #808080;
+    font-style: italic;
+    position: relative;
+}
+
+.inputText#name
+{
+    width: 75%;
+}
+
+#writeReview select
+{
+    margin: 5px;
+}
+
+#writeReview input, textarea
+{
+    margin: 5px;
+}
+
+ul.error
+{
+    padding: 10px;
+    margin: 5px auto 10px auto;
+    border: 1px solid yellow;
+    background:#FFFBC6; 
+    display: none;
+    text-align: center;
+}
+
+li.error
+{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: none;
+}
+
+#form h2 
+{
+    text-align: center;
+}
+
+#form.help a
+{
+    font-size: 8px;
+}
+
+#ie6banner 
+{
+    display: block;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer
+{
+    font-size: 12px;
+    padding-left: 20px;
+    margin-top: 10px;
+    width: 1000px;
+}
+
+/*  CSS styling for dynamic star rating system.
+ * Shamelessly taken from http://nofunc.org/AJAX_Star_Rating/
+ */
+
+.star ul.star
+{
+    list-style: none;
+    width: 85px;
+    height: 20px;
+    top: 0px;
+    position: relative;
+    background: url('../img/stars.gif') repeat-x;
+    cursor: pointer;
+}
+
+.star li 
+{ 
+    float: left;
+    display: block;
+    width: 85px;
+    height: 20px;
+    text-decoration: none;
+    text-indent: -9000px;
+    position: relative;
+
+}
+
+.star li.curr 
+{
+    background: url('../img/stars.gif') left 25px;
+    font-size: 1px;
+}
+
+/* style for the number shown to the right of the stars */
+.star div.user
+{ 
+    left: 5px;
+    top: 5px;
+    float: left;
+    position: relative;
+    font-size: 13px;
+    color: #666; 
+}
+
+blockquote#flaggedReview 
+{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid yellow;
+    background:#FFFBC6; 
+}

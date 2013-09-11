@@ -1,0 +1,19 @@
+Support giving the name of the school in native script (i.e. Chinese characters), as well as English.
+ |- Don't forget to update the 'write_info' _SESSION variable.
+Create a rating distribution chart on a school's page.
+Consider having a "helpful" flag beside a review.
+Allow sorting a school's ratings by best, worst, newest, oldest, most helpful.
+Give more informative javascript error messages (i.e. the message appears beside the erroneous field).
+"Remember" what a person wrote if they get caught by the server-side form validator.
+Write a better 404 message.
+If an error occurs, rather then sending the user to the generic contact page, create an automatic reporter.
+Put the salt in one safe place
+Absorb utils.php and settings.php into appropriate classes
+The searching logic also needs to be in an hdl file, or perhaps a class of its own.
+Do I really need to limit password and username length?
+Improve the flag confirmation email.
+Calculate the average score a user gives.
+Combine register and login into one easy page.
+Have a 'pending review by admin' status for flagged reviews.
+Store all database table names, field names, constants, and magic values as constants in their respective classes.
+After successful activation, the info page should automatically reforward to home/profile/something.

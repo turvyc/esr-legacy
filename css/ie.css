@@ -1,0 +1,15 @@
+/* File: ie.css
+ * Desc: Screw you, Internet Explorer.
+ */
+
+@charset "UTF-8";
+
+span.sortBy
+{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-image: url('../img/sort-arrows.png');
+    vertical-align: middle;
+    background-position: 0px 0px;
+}
