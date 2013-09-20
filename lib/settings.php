@@ -6,16 +6,16 @@ Contains various global variables.
 
 */
 
-$_URL = 'http://localhost/eslschoolrater.dev';
-$_DOC_ROOT = 'eslschoolrater.dev';
+$_URL = 'http://localhost/esr-legacy';
+$_DOC_ROOT = 'esr-legacy';
 $_EMAIL = 'turvyc@gmail.com';
 $_FLAG_EMAIL = 'turvyc@gmail.com';
 
 $_DEBUG = TRUE;
 
 #-- Database Variables --#
-$_DB_NAME = 'eslschoolrater';
-$_DB_USER = 'colin';
+$_DB_NAME = 'esr-legacy';
+$_DB_USER = 'esr-legacy';
 $_DB_PASS = 'tomcat';
 $_DB_HOST = 'localhost';
 

@@ -1,0 +1,26 @@
+# DEVELOPMENT VERSION
+
+# Error documents
+ErrorDocument 404 http://localhost/esr-legacy/404 
+
+# Options
+Options +FollowSymLinks
+Options +Indexes
+Options -MultiViews
+RewriteEngine On
+RewriteBase /esr-legacy
+
+# Empty URLs just go to the home page
+RewriteRule ^$ index.php [L]
+
+# Rules to rewrite URLs as GET parameters
+RewriteRule ^user/(.+)$ profile.php?username=$1 [NC,L]
+RewriteRule ^edit/([0-9]+)$ edit.php?id=$1 [NC,L]
+RewriteRule ^flag/([0-9]+)$ flag.php?id=$1 [NC,L]
+RewriteRule ^school/([0-9]+)_(.+)$ school.php?id=$1 [NC,L]
+RewriteRule ^browse/(.+)$ browse.php?country=$1 [NC,L]
+
+# General rule that .php is appended to other filenames
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !\.php$
+RewriteRule ^(.*)$ $1.php [L]
