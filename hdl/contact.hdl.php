@@ -25,7 +25,7 @@ catch (ValidationException $e) {
         echo $e;
         exit(1);
     }
-    $session->set_error($e->getMessage();
+    $session->set_error($e->getMessage());
     header("location:$_URL/contact");
     exit(1);
 }

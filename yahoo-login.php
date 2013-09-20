@@ -10,7 +10,10 @@ Complicated, I know.
 */
 
 require_once('lib/settings.lib.php');
-require_once('lib/session.hdl.php');
+require_once('lib/session.lib.php');
+$session = new Session();
+$session->set_info('Yahoo login is disabled on the Legacy Site. Sorry!');
+header("location: $_URL/info");
 
 // Prepare the URL to get the Request Token
 $url = 'https://api.login.yahoo.com/oauth/v2/get_request_token'; 

@@ -48,7 +48,10 @@ class Validator {
         if (! preg_match("/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-Z0-9]{2,4}$/", $email) ) {
             throw new ValidationException(ValidationException::INVALID_EMAIL);
         }
+    }
 
+    // Checks whether the given email has already been used to register
+    public function verify_email_unique($email) {
         require('db-connect.php');
 
         $STH = $DBH->prepare('SELECT id FROM members WHERE email=?');

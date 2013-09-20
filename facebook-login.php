@@ -1,6 +1,9 @@
 <?php
-
 require_once('lib/settings.lib.php');
+require_once('lib/session.lib.php');
+$session = new Session();
+$session->set_info('Facebook login is disabled on the Legacy Site. Sorry!');
+header("location: $_URL/info");
 
 $url = "$_URL/hdl/facebook-login.hdl.php";
 

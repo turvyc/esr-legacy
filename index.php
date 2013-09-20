@@ -31,30 +31,33 @@ $page->render_header();
 </div>
 
 <div id="midBar">
-    <h1>Welcome to ESL School Rater!</h1><br />
-    <p>ESL School Rater lets you read and write reviews for ESL/EFL schools 
-    around the world. There are a lot of schools out there, and it can be 
-    difficult to choose which is the best deal. ESL School Rater helps you 
-    with your decision.</p><br />
+    <h1>ESL School Rater, the Legacy Version</h1><br />
     <hr />
-    <div class="info"> 
-        <p style="font-size:200%;text-align:center;">Important notice!</p><br />
-        <p>ESL School Rater is still in its infantile stages, and as such 
-        needs every review possible.</p><br/>
-        <p>Because of this, we have decided that for a limited time, <b>users 
-            may write reviews without registering beforehand!</b> Hopefully 
-        this encourages more people to write that first review :)</p><br />
-        <p style="font-size:200%;text-align:center;"><a class="plain" 
-            style="color:#0765A3;" href="write"><b>write a guest review!</a></b></p><br />
-        <p style="font-size:75%">Note that you won't be able to edit these reviews. 
-        If you want to change something, just contact us.</p>
-    </div>
+    <p>ESL School Rater was my first major web development project, beginning
+    as a way to improve my HTML and CSS, and growing into a fully-featured
+    dynamic website. The codebase has already metamorphasized twice, each
+    refactoring a reflection of my growing abilities, and it is currently
+    undergoing a third: I am implementing ESR using a third-party framework,
+    <a href="ellislab.com/codeigniter">CodeIgniter</a>.</p>
+    <br />
+    <p>I had a lot of fun creating this website, and I'm excited to complete
+    its next incarnation. In the meantime, however, I'd like to show off
+    the website as it once was. Please note that the design and coding, both
+    front- and back-end, are not an accurate reflection of my current coding
+    abilities. Too much of the code is making me wince (hence the refactoring),
+    but there are some points about this code of which I'm proud. I developed 
+    my own implementation of the MVC pattern, I set up authentication with three
+    third-party APIs, (sorry, but that's disabled on this legacy site), and
+    wrote clean, well-commented, and ever-more maintanable code.</p>
+    <br />
+    <p>This Legacy site was entirely created by me, T. Colin Strong, including
+    all images, designs, and coding, with the exception of the stars: the star
+    GIFs and Javascript are from a website now sadly defunct. (Though I did 
+    comment up the Javascript for my own learning purposes. It was quite
+    inscrutable at first.)</p>
+    <br />
+    <h2><a href="http://bitbucket.org/turvyc/esl-school-rater-legacy/src">View the Source Code</a><h2>
     <hr />
-    <div id="news">
-        <h2>News</h2>
-        <br />
-        <?php echo $news->get_news(); ?>
-    </div> 
 </div> 
 
 <?php $page->render_footer(); ?>

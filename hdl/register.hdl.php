@@ -17,6 +17,7 @@ try {
         'email'=>$_POST['email']));
     $validator->verify_recaptcha();
     $validator->verify_email($_POST['email']);
+    $validator->verify_email_unique($_POST['email']);
     $validator->verify_username($_POST['username']);
     $validator->verify_password($_POST['password'], $_POST['repeat']);
 }

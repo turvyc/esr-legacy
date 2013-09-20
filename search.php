@@ -3,6 +3,7 @@ require_once('lib/db-connect.php');
 require_once('lib/utils.php');
 require_once('lib/stars.lib.php');
 require_once('lib/session.lib.php');
+require_once('lib/school.lib.php');
 require_once('lib/page.lib.php');
 
 $session = new Session();
@@ -258,25 +259,32 @@ $page->render_header();
         </thead>
         <tbody class="reviewTable">
             <?php
-            $stars = new Stars();
-            $stars->set_centered();
-            $stars->set_adjustable(false);
             $STH->execute($query['params']);
             $i = 0;
             while ($row = $STH->fetch()) {
-                $id = $row['id'];
-                $name = html($row['name']);
-                $country = html($row['country']);
-                $type = ucwords(html($row['type']));
-                $city = html($row['city']);
-                $stars->set_rating($row['averageStars']);
+                // Get the school's information
+                $school = new School((int)$row['id']);
+                $name = $school->get_name();
+                $country = $school->get_country();
+                $type = $school->get_type();
+                $city = $school->get_city();
+                $rating = $school->get_average_rating();
+                $url = $school->get_url();
+
+                // Prepare the stars
+                $stars = new Stars($school->get_id());
+                $stars->set_centered();
+                $stars->set_adjustable(false);
+                $stars->set_value($rating);
+                $stars_html = $stars->to_html();
+
                 echo "
-                <tr id='searchTable' onclick='rowClick(\"school/$school->get_url()\")' class='reviewTable'>
+                <tr id='searchTable' onclick='rowClick(\"school/$url\")' class='reviewTable'>
                     <td class='reviewTable'>$name</td>
-                    <td class='reviewTable'>{ucwords($city)}</td>
+                    <td class='reviewTable'>$city</td>
                     <td class='reviewTable'>$country</td>
                     <td class='reviewTable'>$type</td>
-                    <td class='reviewTable'>$stars->show_stars()</td>
+                    <td class='reviewTable'>$stars_html</td>
                 </tr>";
                 $i++;
             }

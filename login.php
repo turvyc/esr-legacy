@@ -27,6 +27,7 @@ $page->render_header();
             <ul class="error" id="errorList">
                 <li class="error" id="requiredError">I recommend filling in <i>both</i> your username and password : )</li>
             </ul>
+            <br />
             <label for="username">Username:</label><br />
             <input type="text" name="username" tabindex="1" /><br />
             <label for="password">Password:</label><br />

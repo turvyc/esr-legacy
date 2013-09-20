@@ -56,7 +56,7 @@ class Page {
     </head> 
     <?php flush(); ?>
     <body>
-        <?php include_once('analyticstracking.php'); ?>
+        <?php #include_once('analyticstracking.php'); ?>
         <div id="container">
             <!--[if lte IE 6]>
             <img id="ie6banner" src="img/ie6-banner.png" width="600px" height="150px" alt="You are using a crappy old browser, and in the name of the Internet I refuse to support it. Get with the times and go download Firefox or something: http://www.getfirefox.com" usemap="#ie6bannerMap" />

@@ -28,7 +28,7 @@ try {
     $session->attempt_login($_POST['username'], $_POST['password']);
 }
 catch (SessionException $e) {
-    $session->set_error($e);
+    $session->set_error($e->getMessage());
     header("location:$_URL/login");
     exit(1);
 }

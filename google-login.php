@@ -2,6 +2,10 @@
 
 require_once('lib/google.lib.php');
 require_once('lib/settings.lib.php');
+require_once('lib/session.lib.php');
+$session = new Session();
+$session->set_info('Google login is disabled on the Legacy Site. Sorry!');
+header("location: $_URL/info");
 
 /**
 * The first param is for the redirect. The second is for 
