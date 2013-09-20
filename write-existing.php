@@ -1,6 +1,6 @@
 <?php
 
-require_once('lib/settings.php');
+require_once('lib/settings.lib.php');
 
 session_start();
 

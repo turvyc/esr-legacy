@@ -1,6 +1,6 @@
 <?php
 
-require_once('lib/settings.php');
+require_once('lib/settings.lib.php');
 
 error_reporting(E_ALL);
 

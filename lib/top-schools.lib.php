@@ -23,7 +23,7 @@ class Top_Schools {
 
     public function show_schools() {
         $schools = $this->get_schools();
-        require('settings.php');
+        require('settings.lib.php');
         foreach ($schools as $school) {
             $this->stars->set_rating($school['averageStars']);
             $name = html($school['name']);
