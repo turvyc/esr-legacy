@@ -21,16 +21,16 @@ define("_YAHOO_APP_ID", 'Y3BlKV7g');
 
 */
 
-$_URL = 'http://localhost/esr-legacy';
-$_DOC_ROOT = 'esr-legacy';
-$_EMAIL = 'turvyc@gmail.com';
-$_FLAG_EMAIL = 'turvyc@gmail.com';
+$_URL = 'http://esr.colinstrong.ca';
+$_DOC_ROOT = '';
+$_EMAIL = 'cstrong@sfu.ca';
+$_FLAG_EMAIL = 'cstrong@sfu.ca';
 
 $_DEBUG = TRUE;
 
 #-- Database Variables --#
-$_DB_NAME = 'esr-legacy';
-$_DB_USER = 'esr-legacy';
+$_DB_NAME = 'esr_legacy';
+$_DB_USER = 'esr_leg';
 $_DB_PASS = 'tomcat';
 $_DB_HOST = 'localhost';
 
