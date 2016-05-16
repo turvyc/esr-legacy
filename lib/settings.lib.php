@@ -29,8 +29,8 @@ $_FLAG_EMAIL = 'cstrong@sfu.ca';
 $_DEBUG = TRUE;
 
 #-- Database Variables --#
-$_DB_NAME = 'esr_legacy';
-$_DB_USER = 'esr_leg';
+$_DB_NAME = 'colinst1_esr_legacy';
+$_DB_USER = 'colinst1_esr';
 $_DB_PASS = 'tomcat';
 $_DB_HOST = 'localhost';
 

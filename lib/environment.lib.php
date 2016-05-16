@@ -11,9 +11,9 @@ depending on where the site is deployed.
 class Environment {
     static const DEBUG = true;
 
-    static const URL = 'http://localhost/eslschoolrater.dev';
-    static const EMAIL = 'turvyc@gmail.com';
-    static const FLAG_EMAIL = 'turvyc@gmail.com';
+    static const URL = 'http://esr.colinstrong.ca';
+    static const EMAIL = 'cstrong@sfu.ca';
+    static const FLAG_EMAIL = 'cstrong@sfu.ca';
 
     static const FB_APP_ID = 125111874235106; 
     static const FB_APP_SECRET = '3d06cece1e70ae07e9d703b20ecad401'; 

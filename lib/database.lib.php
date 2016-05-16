@@ -8,8 +8,8 @@ Provides a wrapper class for all database interactions.
 
 class Database {
 
-    static const DATABASE_NAME = 'eslschoolrater';
-    static const USERNAME = 'colin';
+    static const DATABASE_NAME = 'colinst1_esr_legacy';
+    static const USERNAME = 'colinstr1_esr';
     static const PASSWORD = 'tomcat';
     static const HOSTNAME = 'localhost';
 

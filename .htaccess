@@ -1,14 +1,14 @@
 # DEVELOPMENT VERSION
 
 # Error documents
-ErrorDocument 404 http://localhost/esr-legacy/404 
+ErrorDocument 404 http://esr.colinstrong.ca/404 
 
 # Options
 Options +FollowSymLinks
 Options +Indexes
 Options -MultiViews
 RewriteEngine On
-RewriteBase /esr-legacy
+RewriteBase /
 
 # Empty URLs just go to the home page
 RewriteRule ^$ index.php [L]

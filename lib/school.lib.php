@@ -1,6 +1,6 @@
 <?php
 
-require_once('exceptions.lib.php');
+require_once('lib/exceptions.lib.php');
 
 class School {
 
@@ -143,6 +143,7 @@ class School {
         $query = "SELECT id FROM schools ORDER BY averageStars DESC LIMIT $n";
         $STH = $DBH->query($query);
         
+        $top_schools = null;
         while ($row = $STH->fetch()) {
             $school = new School((int)$row['id']);
             $top_schools[] = $school;
