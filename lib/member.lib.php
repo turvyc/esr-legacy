@@ -215,6 +215,6 @@ class Member {
     }
 
     public static function generate_hash($password) {
-        return sha1(Member::SALT . $password) . sha1($password . Member::SALT);
+        return sha1(Member::SALT . $password);
     }
 }

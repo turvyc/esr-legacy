@@ -4,7 +4,7 @@ require_once('cookie.lib.php');
 
 class Session {
 
-    const SALT = "%>n*N>DFl@FDuF*Zc.:mM@0M}dZ)3lX|V@ZY},ZMD_?d,~Nc:.Dh6[TY>)NZ&]N";
+    const SALT = '%>n*N>DFl@FDuF*Zc.:mM@0M}dZ)3lX|V@ZY},ZMD_?d,~Nc:.Dh6[TY>)NZ&]N';
 
     // The following constants are used as keys in $_SESSION.
     const AUTHORIZED = 'auth';
@@ -152,7 +152,7 @@ class Session {
 
     // String. Returns a very large hash of the password and salt.
     private function getPasswordHash($password) {
-        return sha1(Session::SALT . $password) . sha1($password . Session::SALT);
+        return sha1(Session::SALT . $password);
     }	
 
 
