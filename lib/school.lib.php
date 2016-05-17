@@ -1,6 +1,6 @@
 <?php
 
-require_once('lib/exceptions.lib.php');
+require_once('exceptions.lib.php');
 
 class School {
 
@@ -65,7 +65,7 @@ class School {
 
     // Writes a new school to the database, and returns a School object of
     // the school just created.
-    public static function new_school($data) {
+    public static function create_new_school($data) {
         require('db-connect.php');
         // $format = "INSERT INTO schools (%s, %s, %s, %s, %s, %s, %s, %) VALUES
         // (%s, %s, %s, %s, %s, %s, 
@@ -172,5 +172,17 @@ class School {
         }
 
         return $sum / $reviews;
+    }
+
+    // LEGACY ALERT: should poll database to find an existing school and return
+    // it
+    public static function get_existing_school($name, $type, $city, $country) {
+        return null;
+    }
+
+    // LEGACY ALERT: should poll database to find similar schools and return
+    // it
+    public static function get_similar_schools($name, $city, $country) {
+        return null;
     }
 }
