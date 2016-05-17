@@ -143,7 +143,7 @@ class School {
         $query = "SELECT id FROM schools ORDER BY averageStars DESC LIMIT $n";
         $STH = $DBH->query($query);
         
-        $top_schools = null;
+        $top_schools = array();
         while ($row = $STH->fetch()) {
             $school = new School((int)$row['id']);
             $top_schools[] = $school;
