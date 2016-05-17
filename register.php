@@ -2,6 +2,7 @@
 
 require_once('lib/page.lib.php');
 require_once('lib/session.lib.php');
+require_once('lib/recaptcha.lib.php');
 
 $page = new Page('Register');
 $session = new Session();
@@ -45,9 +46,13 @@ catch(SessionException $exception) {
             <label for="repeat">Repeat Password</label><br />
             <input type="password" name="repeat" tabindex="4" value="<?php echo $form_data['repeat']; ?>" /><br />
 
-            <?php require_once('lib/recaptcha.lib.php');
+<?php
+            /* Recaptcha data here, disabled for legacy version
             $publickey = '6LfntsMSAAAAAC3S1YLlkFFl5BjRCZxaMgL22nTQ';
             echo recaptcha_get_html($publickey); ?>
+            */
+?>
+            <b>ReCAPTCHA disabled for legacy version.</b>
 
             <br /><input type="submit" value="Submit" tabindex="6" />
         </form>
